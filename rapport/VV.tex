@@ -41,6 +41,7 @@
 	\subsection{Analyse du fonctionnement du variateur}
 	
 	\paragraph{Le pont à diodes pour le circuit d'excitation}
+	\paragraph{}
 	
 	Voici les relevés de Ue et Ie à l’aide de l'oscilloscope : 
 	
@@ -60,6 +61,7 @@
 	Or dans notre cas la variation de courant est très faible donc notre circuit est fortement inductif.
 	
 	\paragraph{Le pont à thyristors pour le circuit d’induit :}
+	\paragraph{}
 	
 	Pour les différentes valeurs de courants et tensions, en toute logique, plus nous augmentons le potentiomètre plus la valeur moyenne du courant et de la tension est importante et plus le bras de la machine tourne vite. 
 	Nous avons relevé u(t) et i(t). Nous avons le courant en jaune et la tension en bleu. 
@@ -85,6 +87,7 @@
 	
 	\subsection{Impact du variateur sur l’ensemble moteur-charge}
 	\paragraph{Alimentation par le variateur :}
+	\paragraph{}
 	Nous réglons la charge à sa valeur maximale soit 2,1 kW.
 	
 	Pour obtenir la caractéristique couple/vitesse du moteur à partir de ces relevés, on peut écrire l’équation suivante: 
@@ -95,9 +98,9 @@
 
 	Ensuite, comme $U=e+RI$ on peut déterminer la valeur de R comme étant $R=\frac{dU}{dI}$.
 	Pour cela on peut plot le graph $U=f(I)$ et grâce à une régression linéaire, on obtient approximativement     
-	$$U = 516 + 80*I$$, on peut alors identifier $R=80$ .
+	$$U = 516 + 80*I$$on peut alors identifier $R=80$ .
 	
-	Cela nous permet enfin de plot graph la caractéristique couple/vitesse qui est le suivant:
+	Cela nous permet enfin d'afficher la caractéristique couple/vitesse qui est le suivant:
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=14cm]{plotCdeOmega2.png}
@@ -105,6 +108,7 @@
 	\end{figure}
 
 	\paragraph{Type de Charge :}
+	\paragraph{}
 	
 	Le moteur à courant continu doit entraîner la machine synchrone qui peut être représentée par un schéma de type RLE. Cette machine synchrone est elle-même chargée par une charge purement résistive qui ajoute une composante R en série de la charge globale.\\
 	Cela nous amène à une charge globale de type RLE avec une composante R forte.
@@ -123,6 +127,7 @@
 	Cependant la vitesse de rotation de la machine n’est pas impactée (constante au cours du temps) car le courant d’induit varie trop rapidement.
 	
 	\paragraph{Impact du variateur sur l'alimentation électrique}
+	\paragraph{}
 	
 	\begin{figure}[h]
 		\centering
